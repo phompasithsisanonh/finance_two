@@ -65,7 +65,7 @@ const LoanMoneyfloating = () => {
             />
           </FormControl>
           <FormControl>
-            <FormLabel>ເງິນຕົ້ນ (ບາດ)</FormLabel>
+            <FormLabel>ເງິນຕົ້ນ </FormLabel>
             <Input
               type="number"
               value={principal}
@@ -110,9 +110,9 @@ const LoanMoneyfloating = () => {
                   <Tr>
                     <Th fontFamily={'Noto Sans Lao, serif'}>ເດືອນ</Th>
                     <Th fontFamily={'Noto Sans Lao, serif'}>ຕົ້ນທືນ</Th>
-                    <Th fontFamily={'Noto Sans Lao, serif'}>ດອກເບ້ຍ (ບາດ)</Th>
-                    <Th fontFamily={'Noto Sans Lao, serif'}>ເງິນຕົ້ນຕ້ອງຈ່າຍ (ບາດ)</Th>
-                    <Th fontFamily={'Noto Sans Lao, serif'}>ຍອດລວມດອກເບ້ຍ+ຕົ້ນທືນຕ້ອງຈ່າຍ (ບາດ)</Th>
+                    <Th fontFamily={'Noto Sans Lao, serif'}>ດອກເບ້ຍ </Th>
+                    <Th fontFamily={'Noto Sans Lao, serif'}>ເງິນຕົ້ນຕ້ອງຈ່າຍ </Th>
+                    <Th fontFamily={'Noto Sans Lao, serif'}>ຍອດລວມດອກເບ້ຍ+ຕົ້ນທືນຕ້ອງຈ່າຍ </Th>
                   </Tr>
                 </Thead>
                 <Tbody>
@@ -129,20 +129,20 @@ const LoanMoneyfloating = () => {
               </Table>
             </TableContainer>
             <Box mt={4}>
-              <Text>ເງິນກູ້: {principal} ບາດ</Text>
+              <Text>ເງິນກູ້: {principal} </Text>
               <Text>
                 ດອກເບ້ຍລວມ:{" "}
                 {monthlyData
                   .reduce((sum, data) => sum + Number(data.interest), 0)
                   .toFixed(2)}{" "}
-                ບາດ
+                
               </Text>
               <Text>
                 ຕົ້ນທຶນລວມ:{" "}
                 {monthlyData
                   .reduce((sum, data) => sum + Number(data.emi), 0)
                   .toFixed(2)}{" "}
-                ບາດ
+                
               </Text>
             </Box>
           </Box>

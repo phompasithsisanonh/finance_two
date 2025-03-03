@@ -75,7 +75,7 @@ const LoanMoney = () => {
               />
             </FormControl>
             <FormControl>
-              <FormLabel>ເງິນຕົ້ນ (ບາດ)</FormLabel>
+              <FormLabel>ເງິນຕົ້ນ</FormLabel>
               <Input
                 type="number"
                 value={principal}
@@ -119,10 +119,10 @@ const LoanMoney = () => {
                   <Thead>
                     <Tr>
                       <Th>ເດືອນ</Th>
-                      <Th>ຄ່າງວດ (ບາດ)</Th>
-                      <Th>ດອກເບ້ຍ (ບາດ)</Th>
-                      <Th>ເງິນຕົ້ນ (ບາດ)</Th>
-                      <Th>ຄົງເຫຼືອ (ບາດ)</Th>
+                      <Th>ຄ່າງວດ </Th>
+                      <Th>ດອກເບ້ຍ </Th>
+                      <Th>ເງິນຕົ້ນ </Th>
+                      <Th>ຄົງເຫຼືອ </Th>
                     </Tr>
                   </Thead>
                   <Tbody>
@@ -139,20 +139,20 @@ const LoanMoney = () => {
                 </Table>
               </TableContainer>
               <Box mt={4}>
-                <Text>ເງິນກູ້: {principal} ບາດ</Text>
+                <Text>ເງິນກູ້: {principal}</Text>
                 <Text>
                   ດອກເບ້ຍລວມ:{" "}
                   {monthlyData
                     .reduce((sum, data) => sum + Number(data.interest), 0)
                     .toFixed(2)}{" "}
-                  ບາດ
+                  
                 </Text>
                 <Text>
                   ຕົ້ນທຶນລວມ:{" "}
                   {monthlyData
                     .reduce((sum, data) => sum + Number(data.emi), 0)
                     .toFixed(2)}{" "}
-                  ບາດ
+                  
                 </Text>
               </Box>
             </Box>
