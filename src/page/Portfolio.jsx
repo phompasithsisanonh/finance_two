@@ -16,7 +16,6 @@ import {
   VStack,
   HStack,
   Icon,
-  Divider,
   Avatar,
   Badge,
   IconButton,
@@ -44,8 +43,6 @@ import {
   FaTwitter,
   FaEnvelope,
   FaCode,
-  FaPaintBrush,
-  FaMobileAlt,
   FaBars,
 } from "react-icons/fa";
 import imgs from "./im.jpeg";
@@ -377,16 +374,15 @@ const Projects = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Box id="projects" bg={bg}>
-     <Modal  size={"full"} w="100%" isOpen={isOpen} onClose={onClose}>
-    
+      <Modal size={"full"} w="100%" isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
           <ModalHeader>E-commerce</ModalHeader>
           <ModalCloseButton />
-          <ModalBody >
+          <ModalBody>
             {dataImageProject.map((item, index) =>
               item.Image.map((i, index) => (
-                  <Image
+                <Image
                   key={index}
                   src={i}
                   alt=""
@@ -405,7 +401,6 @@ const Projects = () => {
             <Button variant="ghost">Secondary Action</Button>
           </ModalFooter>
         </ModalContent>
-  
       </Modal>
       <Container maxW="container.xl" py={{ base: 12, md: 20 }}>
         <VStack spacing={{ base: 8, md: 12 }}>

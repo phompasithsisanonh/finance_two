@@ -1,13 +1,11 @@
-
-import './App.css';
+import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import FinanceLanding from "./page/FinanceLanding";
-import LoanMoney from './components/LoanMoney';
-import LoanMoneyfloating from './components/LoanMoneyfloating';
-import ProfitSale from './components/ProfitSale';
-import DailyBudget from './components/DailyBudget';
-import Income from './components/Income';
-import Portfolio from './page/Portfolio';
+import LoanMoney from "./components/LoanMoney";
+import LoanMoneyfloating from "./components/LoanMoneyfloating";
+import ProfitSale from "./components/ProfitSale";
+import DailyBudget from "./components/DailyBudget";
+import Income from "./components/Income";
+import Portfolio from "./page/Portfolio";
 function App() {
   return (
     <Routes>
@@ -17,7 +15,7 @@ function App() {
       <Route path="/profitSale" element={<ProfitSale />} />
       <Route path="/daily" element={<DailyBudget />} />
       <Route path="/income" element={<Income />} />
-      </Routes>
+    </Routes>
   );
 }
 
