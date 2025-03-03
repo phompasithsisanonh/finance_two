@@ -323,6 +323,7 @@ const Income = () => {
   return (
     <Container maxW="container.xl" py={6}>
         <Navigation/>
+      {isFormValid}
       <Text as="h1" mb={6} textAlign="center" fontSize={{ base: "2xl", md: "3xl" }}>
         ເຄື່ອງມືຈັດການການເງິນ
       </Text>
