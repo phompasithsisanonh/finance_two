@@ -119,16 +119,6 @@ const Navigation = () => {
           </Stack>
         </Box>
       )}
-
-      {/* Sign Up Button */}
-      <Button
-        colorScheme="purple"
-        size="sm"
-        display={{ base: !isOpen ? "flex" : "none", md: "flex" }}
-        onClick={() => navigate("/signup")} // เพิ่มเส้นทางจริงตามที่ต้องการ
-      >
-        Sign Up
-      </Button>
     </Flex>
   );
 };

@@ -16,6 +16,7 @@ function App() {
       <Route path="/profitSale" element={<ProfitSale />} />
       <Route path="/daily" element={<DailyBudget />} />
       <Route path="/income" element={<Income />} />
+      <Route path="*" element={<FinanceLanding />} />
       </Routes>
   );
 }
