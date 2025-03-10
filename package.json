@@ -12,14 +12,18 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.8.1",
     "framer-motion": "^12.4.7",
     "react": "^18.2.0",
     "react-calendar": "^5.1.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.5.0",
+    "react-qr-barcode-scanner": "^2.0.0",
+    "react-qr-reader": "^3.0.0-beta-1",
     "react-router-dom": "^6.26.2",
     "react-scripts": "5.0.1",
     "recharts": "^2.15.1",
+    "socket.io-client": "^4.8.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

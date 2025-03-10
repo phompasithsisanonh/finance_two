@@ -92,7 +92,7 @@ const Header = () => {
             letterSpacing="tight"
           >
             <Link href="#home" _hover={{ textDecoration: "none" }}>
-              YourName
+              PHOMPASITH SISANONH
             </Link>
           </Heading>
 
@@ -194,11 +194,14 @@ const Hero = () => {
               Passionate about creating intuitive user experiences.
             </Text>
             <HStack spacing={4}>
-              <Button colorScheme="teal" size={{ base: "md", md: "lg" }}>
-                View Projects
-              </Button>
               <Button variant="outline" size={{ base: "md", md: "lg" }}>
-                Resume
+                <Link
+                  href={
+                    "https://www.canva.com/design/DAGgBhfujBk/-F-A3HUPjMJsJjuI1QuTXg/view?utm_content=DAGgBhfujBk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hff39965e80"
+                  }
+                >
+                  CV
+                </Link>
               </Button>
             </HStack>
           </VStack>
@@ -264,17 +267,19 @@ const About = () => {
               textAlign={{ base: "center", md: "left" }}
             >
               <Text fontSize={{ base: "md", md: "lg" }}>
-                I'm a frontend developer with a passion for building beautiful,
-                responsive, and user-friendly websites. I have experience with
-                modern frontend frameworks and libraries like React, along with
-                design systems like Chakra UI.
+                Hello, my name is Mr. Phompasith Sisanonh, and I am 23 years
+                old. I graduated with a Bachelor’s degree in Finance from the
+                Banking Institution between 2020 and 2024. Currently, I am
+                working at Chusheng Laos Company Limited since 2024 to the
+                present.
               </Text>
 
               <Text fontSize={{ base: "md", md: "lg" }}>
-                With a background in design and development, I bring a unique
-                perspective to projects that balances aesthetics with
-                functionality. I'm constantly learning new technologies to stay
-                at the forefront of web development.
+                I possess skills in technology, including basic coding with
+                Python, the use of Power BI, and version control with Git and
+                GitHub. Additionally, I use React.js and Chart.js to develop
+                front-end interfaces, while employing Node.js, Express.js, and
+                MongoDB for back-end development and database management
               </Text>
 
               <SimpleGrid columns={{ base: 1, sm: 2 }} spacing={4} width="100%">
@@ -299,13 +304,18 @@ const About = () => {
                   </HStack>
                 </VStack>
               </SimpleGrid>
-
               <Button
                 colorScheme="teal"
                 leftIcon={<FaEnvelope />}
                 alignSelf={{ base: "center", md: "flex-start" }}
               >
-                Download CV
+                <Link
+                  href={
+                    "https://www.canva.com/design/DAGgBhfujBk/-F-A3HUPjMJsJjuI1QuTXg/view?utm_content=DAGgBhfujBk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hff39965e80"
+                  }
+                >
+                  CV
+                </Link>
               </Button>
             </VStack>
           </Grid>
@@ -657,34 +667,22 @@ const Contact = () => {
                 >
                   <HStack>
                     <Icon as={FaEnvelope} color="teal.500" />
-                    <Text>your.email@example.com</Text>
+                    <Text>phompasit2323@gmail.com</Text>
                   </HStack>
                   <HStack>
                     <Icon as={FaGithub} color="teal.500" />
-                    <Link href="https://github.com/yourusername" isExternal>
-                      github.com/yourusername
-                    </Link>
-                  </HStack>
-                  <HStack>
-                    <Icon as={FaLinkedin} color="teal.500" />
                     <Link
-                      href="https://linkedin.com/in/yourusername"
+                      href="https://github.com/phompasithsisanonh"
                       isExternal
                     >
-                      linkedin.com/in/yourusername
+                      github.com/phompasithsisanonh
                     </Link>
                   </HStack>
                 </VStack>
 
                 <HStack spacing={4} mt={6}>
-                  <Link href="https://github.com/yourusername" isExternal>
+                  <Link href="https://github.com/phompasithsisanonh" isExternal>
                     <Icon as={FaGithub} w={6} h={6} />
-                  </Link>
-                  <Link href="https://linkedin.com/in/yourusername" isExternal>
-                    <Icon as={FaLinkedin} w={6} h={6} />
-                  </Link>
-                  <Link href="https://twitter.com/yourusername" isExternal>
-                    <Icon as={FaTwitter} w={6} h={6} />
                   </Link>
                 </HStack>
               </VStack>
@@ -704,7 +702,7 @@ const Contact = () => {
                     <Input placeholder="Your Name" mb={4} />
                     <Input placeholder="Your Email" mb={4} />
                     <Textarea placeholder="Your Message" rows={5} mb={4} />
-                    <Button colorScheme="teal" width="100%">
+                    <Button disabled  width="100%">
                       Send Message
                     </Button>
                   </Flex>
