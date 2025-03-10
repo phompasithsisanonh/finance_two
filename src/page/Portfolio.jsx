@@ -39,8 +39,6 @@ import {
   FaSun,
   FaMoon,
   FaGithub,
-  FaLinkedin,
-  FaTwitter,
   FaEnvelope,
   FaCode,
   FaBars,
@@ -730,18 +728,10 @@ const Footer = () => {
           align="center"
         >
           <Text fontSize={{ base: "sm", md: "md" }}>
-            © {new Date().getFullYear()} Your Name. All rights reserved
+            © {new Date().getFullYear()}phompasithsisanonh. All rights reserved
           </Text>
           <HStack spacing={4}>
-            <Link href="https://github.com/yourusername" isExternal>
-              <Icon as={FaGithub} w={5} h={5} />
-            </Link>
-            <Link href="https://linkedin.com/in/yourusername" isExternal>
-              <Icon as={FaLinkedin} w={5} h={5} />
-            </Link>
-            <Link href="https://twitter.com/yourusername" isExternal>
-              <Icon as={FaTwitter} w={5} h={5} />
-            </Link>
+   
           </HStack>
         </Stack>
       </Container>
